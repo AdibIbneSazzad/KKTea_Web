@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kktea_web.ayesha_2531729.U5_quality_dashboardController">
+   <left>
+      <VBox prefHeight="375.0" prefWidth="168.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#leafQualityCheckOA" prefHeight="26.0" prefWidth="145.0" text="Leaf Quality Check" />
+            <Button mnemonicParsing="false" onAction="#stageQualityCheckOA" prefHeight="27.0" prefWidth="145.0" text="Stage Quality Check" />
+            <Button mnemonicParsing="false" onAction="#FinishedTeaVerificationOA" prefHeight="31.0" prefWidth="145.0" text="Finished Tea Verification" />
+            <Button mnemonicParsing="false" onAction="#organicComplianceOA" prefHeight="29.0" prefWidth="146.0" text="Organic Compliance" />
+            <Button mnemonicParsing="false" onAction="#certificationOA" prefHeight="32.0" prefWidth="146.0" text="Certification" />
+            <Button mnemonicParsing="false" onAction="#auditPreparationOA" prefHeight="28.0" prefWidth="146.0" text="Audit Preparation" />
+            <Button mnemonicParsing="false" onAction="#auditFinidingsOA" prefHeight="31.0" prefWidth="146.0" text="Audit Findings" />
+            <Button mnemonicParsing="false" onAction="#qualityReportsOA" prefHeight="31.0" prefWidth="145.0" text="Quality Reports" />
+            <Button mnemonicParsing="false" onAction="#logOutOA" prefHeight="30.0" prefWidth="145.0" text="Log Out" />
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
