@@ -1,46 +1,61 @@
 package com.example.kktea_web.ayesha_2531729;
 
+import com.example.kktea_web.HelloApplication;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.control.MenuBar;
+import javafx.scene.layout.BorderPane;
 
-public class U5_quality_dashboardController
-{
+import java.io.IOException;
+
+public class U5_quality_dashboardController {
+    @javafx.fxml.FXML
+    private MenuBar mainBorderPane;
+    @javafx.fxml.FXML
+    private BorderPane u5QualityDashboardBorderPane;
+
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void qualityReportsOA(ActionEvent actionEvent) {
+    public void openLogOutOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void FinishedTeaVerificationOA(ActionEvent actionEvent) {
+    public void openAuditFinidingsOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void organicComplianceOA(ActionEvent actionEvent) {
+    public void openStageQualityCheckOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void auditPreparationOA(ActionEvent actionEvent) {
+    public void openQualityReportsOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void logOutOA(ActionEvent actionEvent) {
+    public void OpenAuditPreparationOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void stageQualityCheckOA(ActionEvent actionEvent) {
+    public void openOrganicComplianceOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void leafQualityCheckOA(ActionEvent actionEvent) {
+    public void openCertificationOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void auditFinidingsOA(ActionEvent actionEvent) {
+    public void openFinishedTeaVerificationOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void certificationOA(ActionEvent actionEvent) {
+    public void openLeafQualityCheckOA(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/example/kktea_web/ayesha_2531729/U5G1_LeafQualityCheck.fxml"));
+            u5QualityDashboardBorderPane.setCenter(fxmlLoader.load());
+        } catch (IOException e) {
+        }
     }
 }
