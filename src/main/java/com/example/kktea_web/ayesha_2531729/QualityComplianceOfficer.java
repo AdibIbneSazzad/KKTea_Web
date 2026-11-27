@@ -30,6 +30,8 @@ public class QualityComplianceOfficer extends Employee {
                 + " | Service: " + calculateServiceLength());
     }
 
-    public String getAssignedZone() { return assignedZone; }
-    public void setAssignedZone(String assignedZone) { this.assignedZone = assignedZone; }
+    public String getAssignedZone() {
+        return assignedZone; }
+    public void setAssignedZone(String assignedZone) {
+        this.assignedZone = assignedZone; }
 }
